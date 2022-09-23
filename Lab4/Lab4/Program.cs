@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Lab4;
+
+List<Person> people = new List<Person>();
 
