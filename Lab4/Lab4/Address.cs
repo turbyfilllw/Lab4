@@ -18,11 +18,7 @@ namespace Lab4
 
         public override string ToString()
         {
-			return
-				$"Street Address: {StreetAddress}\n" +
-				$"City: {City}\n" +
-				$"State: {State}\n" +
-				$"Postal code: {PostalCode}";
+			return $"{StreetAddress}|{City}|{State}|{PostalCode}";
         }
     }
 }
