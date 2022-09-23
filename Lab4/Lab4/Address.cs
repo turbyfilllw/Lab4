@@ -1,8 +1,12 @@
 ﻿using System;
 namespace Lab4
 {
+	/// <summary>
+	/// Each person will have an address
+	/// </summary>
 	public class Address
 	{
+		
 		public string StreetAddress { get; set; }
 		public string City { get; set; }
 		public string State { get; set; }
@@ -16,13 +20,13 @@ namespace Lab4
 			this.PostalCode = postal;
 		}
 
+		/// <summary>
+		/// Overridden tostring for output
+		/// </summary>
+		/// <returns>the address information</returns>
         public override string ToString()
         {
-			return
-				$"Street Address: {StreetAddress}\n" +
-				$"City: {City}\n" +
-				$"State: {State}\n" +
-				$"Postal code: {PostalCode}";
+			return $"{StreetAddress}|{City}|{State}|{PostalCode}";
         }
     }
 }
